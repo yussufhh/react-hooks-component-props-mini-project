@@ -1,7 +1,7 @@
 import React from "react";
 
 function Article({title,  date,  preview}){
-  if(!{date})
+  if(!date){ 
       
   return(
     <article>
@@ -9,7 +9,9 @@ function Article({title,  date,  preview}){
         <small>January 1, 1970</small>
         <p>{preview}</p>
     </article>
+
   )
+}
   else{
     return(
         <article>
